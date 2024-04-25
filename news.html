@@ -8,13 +8,8 @@
     <link rel="stylesheet" href="./assets/css/info.css">
     <link rel="stylesheet" href="./assets/css/head.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Student Help Desk</h1>
-            </div>
-            <nav>
+<body> <header> <div class="container"> <div class="logo">
+    <h1>Tech help Desk</h1></div> <nav>
                 <ul>
                     <li><a href="http://127.0.0.1:5500/resume_builder/index.html">Home</a></li>
                     <li><a href="http://127.0.0.1:5500/resume_builder/Notes.html">Notes</a></li>
@@ -23,15 +18,9 @@
                     <li><a href="#">News</a></li>
                     <li><a href="https://internship.aicte-india.org/" target="_blank">Internship</a></li>
                     <li><a href="http://127.0.0.1:5500/resume_builder/resume.html">Resume</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section>
+                </ul>  </nav> </div> </header> <section>
         <div class="main-nav container flex">
-            <div class="nav-links">
-                <ul class="flex">
+            <div class="nav-links"> <ul class="flex">
                     <li class="hover-link nav-item" id="all" onclick="onNavItemClick('all')">All</li>
                     <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
                     <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
@@ -44,17 +33,11 @@
             <div class="search-bar flex">
                 <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
                 <button id="search-button" class="search-button">Search</button>
-            </div>
-        </div>
-    </section>
-    
-
+            </div>    </div> </section>
     <main>
         <div class="cards-container container flex" id="cards-container">
             
-        </div>
-    </main>
-
+        </div> </main>
     <template id="template-news-card">
         <div class="card">
             <div class="card-header">
@@ -64,10 +47,7 @@
                 <h3 id="news-title">This is the Title</h3>
                 <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
                 <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
-            </div>
-        </div>
-    </template>
-
+            </div> </div></template>
     <script src="./assets/js/fetch.js"></script>
 </body>
 </html> 

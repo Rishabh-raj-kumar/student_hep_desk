@@ -28,6 +28,7 @@ let firstnameElem = mainForm.firstname,
 
 // display elements
 let nameDsp = document.getElementById('fullname_dsp'),
+    imageDsp = document.getElementById('image_dsp'),
     phonenoDsp = document.getElementById('phoneno_dsp'),
     emailDsp = document.getElementById('email_dsp'),
     addressDsp = document.getElementById('address_dsp'),
@@ -213,6 +214,13 @@ const generateCV = () => {
     console.log(userData);
 }
 
+function previewImage(){
+    let oFReader = new FileReader();
+    oFReader.readAsDataURL(imageElem.files[0]);
+    oFReader.onload = function(ofEvent){
+        imageDsp.src = ofEvent.target.result;
+    }
+}
 
 // print CV
 function printCV(){
